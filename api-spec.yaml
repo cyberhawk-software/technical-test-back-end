@@ -87,7 +87,7 @@ paths:
   /turbines:
     get:
       summary: "Sample endpoint: Returns data for all turbines"
-      operationId: farms.index
+      operationId: turbines.index
       tags:
         - turbines
       responses:
@@ -106,7 +106,7 @@ paths:
           type: integer
     get:
       summary: "Sample endpoint: Returns data for turbine with ID :turbineID"
-      operationId: farms.show
+      operationId: turbines.show
       tags:
         - turbines
       responses:
@@ -170,7 +170,7 @@ paths:
           type: integer
     get:
       summary: "Sample endpoint: Returns data for all inspections belonging to turbine with ID :turbineID"
-      operationId: turbines.components.index
+      operationId: turbines.inspections.index
       tags:
         - turbines
         - inspections
@@ -195,7 +195,7 @@ paths:
           type: integer
     get:
       summary: "Sample endpoint: Returns data for inspection with ID :inspectionID belonging to turbine with ID :turbineID"
-      operationId: turbines.components.show
+      operationId: turbines.inspections.show
       tags:
         - turbines
         - components
