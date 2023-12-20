@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('turbines', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('farm_id');
             $table->double('lat_number');
             $table->double('lng_number');
             $table->timestamps();

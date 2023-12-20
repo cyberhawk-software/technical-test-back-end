@@ -11,12 +11,10 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('components', function (Blueprint $table) {
             $table->id();
-            $table->integer('component_type_id');
-            $table->integer('turbine_id');
             $table->timestamps();
         });
     }
@@ -26,7 +24,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('components');
     }
