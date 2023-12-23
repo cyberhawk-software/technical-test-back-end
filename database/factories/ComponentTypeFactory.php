@@ -2,10 +2,11 @@
 
 namespace Database\Factories;
 
+use App\Models\ComponentType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\ComponentType>
+ * @extends Factory<ComponentType>
  */
 class ComponentTypeFactory extends Factory
 {
@@ -14,10 +15,10 @@ class ComponentTypeFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
-            //
+            'name' => $this->faker->word
         ];
     }
 }

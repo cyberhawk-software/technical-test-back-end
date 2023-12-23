@@ -2,10 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\Inspection;
+use App\Models\Turbine;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Inspection>
+ * @extends Factory<Inspection>
  */
 class InspectionFactory extends Factory
 {
@@ -17,7 +20,8 @@ class InspectionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'inspected_at' => Carbon::now(),
+            'turbine_id' => Turbine::factory(),
         ];
     }
 }
