@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\FarmController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\TurbineController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/farms', [FarmController::class, 'index'])->name('farms.all');
+Route::get('/turbines', [TurbineController::class, 'index'])->name('turbines.all');
