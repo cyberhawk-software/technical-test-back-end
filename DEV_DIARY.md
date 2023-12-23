@@ -7,3 +7,5 @@
 5. Sort out all the factories
 6. Build the basic structure for services/repositories/controllers
 7. Create some seeders so we can get some data into the app
+8. Check /farms endpoint to see if working. It wasn't so debugged and found I needed turbines so created all infrastructure to get turbines
+9. 
