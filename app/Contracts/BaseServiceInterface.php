@@ -2,7 +2,8 @@
 
 namespace App\Contracts;
 
-use Ramsey\Collection\Collection;
+
+use Illuminate\Support\Collection;
 
 interface BaseServiceInterface
 {

@@ -4,18 +4,26 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreFarmRequest;
 use App\Http\Requests\UpdateFarmRequest;
+use App\Http\Resources\FarmResource;
 use App\Models\Farm;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Routing\Controller;
 
 class FarmController extends Controller
 {
+    public function __construct(protected \App\Services\Farm $farmService)
+    {
+    }
+
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return AnonymousResourceCollection
      */
-    public function index()
+
+    public function index(): AnonymousResourceCollection
     {
-        //
+        return FarmResource::collection($this->farmService->all());
     }
 
     /**
