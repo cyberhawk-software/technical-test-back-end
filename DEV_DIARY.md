@@ -8,4 +8,4 @@
 6. Build the basic structure for services/repositories/controllers
 7. Create some seeders so we can get some data into the app
 8. Check /farms endpoint to see if working. It wasn't so debugged and found I needed turbines so created all infrastructure to get turbines
-9. 
+9. Clicked on farm and saw I needed to create the components end points so created the components infrastructure 

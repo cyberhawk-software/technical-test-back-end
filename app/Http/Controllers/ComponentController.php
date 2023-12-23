@@ -4,18 +4,24 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreComponentRequest;
 use App\Http\Requests\UpdateComponentRequest;
+use App\Http\Resources\ComponentResource;
 use App\Models\Component;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Routing\Controller;
 
 class ComponentController extends Controller
 {
+    public function __construct(protected \App\Services\Component $componentService)
+    {
+    }
+
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return AnonymousResourceCollection
      */
-    public function index()
+    public function index(): AnonymousResourceCollection
     {
-        //
+        return ComponentResource::collection($this->componentService->all());
     }
 
     /**

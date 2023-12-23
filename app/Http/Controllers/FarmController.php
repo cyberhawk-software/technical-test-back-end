@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreFarmRequest;
 use App\Http\Requests\UpdateFarmRequest;
 use App\Http\Resources\FarmResource;
+use App\Http\Resources\TurbineResource;
 use App\Models\Farm;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
 class FarmController extends Controller
@@ -27,6 +29,17 @@ class FarmController extends Controller
     }
 
     /**
+     * Get farm turbines
+     *
+     * @param Farm $farm
+     * @return AnonymousResourceCollection
+     */
+    public function getTurbines(Farm $farm): AnonymousResourceCollection
+    {
+        return TurbineResource::collection($farm->turbines);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -39,30 +52,30 @@ class FarmController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreFarmRequest  $request
-     * @return \Illuminate\Http\Response
+     * @param StoreFarmRequest $request
+     * @return Response
      */
     public function store(StoreFarmRequest $request)
     {
-        //
+        // TODO store farm logic here
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Farm  $farm
-     * @return \Illuminate\Http\Response
+     * @param Farm $farm
+     * @return FarmResource
      */
-    public function show(Farm $farm)
+    public function show(Farm $farm): FarmResource
     {
-        //
+        return new FarmResource($farm);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Farm  $farm
-     * @return \Illuminate\Http\Response
+     * @param Farm $farm
+     * @return Response
      */
     public function edit(Farm $farm)
     {
@@ -73,8 +86,8 @@ class FarmController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateFarmRequest  $request
-     * @param  \App\Models\Farm  $farm
-     * @return \Illuminate\Http\Response
+     * @param Farm $farm
+     * @return Response
      */
     public function update(UpdateFarmRequest $request, Farm $farm)
     {
@@ -84,8 +97,8 @@ class FarmController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Farm  $farm
-     * @return \Illuminate\Http\Response
+     * @param Farm $farm
+     * @return Response
      */
     public function destroy(Farm $farm)
     {
