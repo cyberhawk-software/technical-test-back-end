@@ -5,3 +5,5 @@
 3. Wrote migrations
 4. Set up relationships in models
 5. Sort out all the factories
+6. Build the basic structure for services/repositories/controllers
+7. Create some seeders so we can get some data into the app
