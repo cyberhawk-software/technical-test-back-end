@@ -10,22 +10,9 @@ interface BaseRepositoryInterface
     /**
      * Get all the models
      *
+     * @param array $filters
      * @param array $relations
      * @return Collection
      */
-    public function all(array $relations = []): Collection;
-
-    /**
-     * Get model by ID
-     *
-     * @param int $id
-     * @param array $relations
-     * @param array $appends
-     * @return Model|null
-     */
-    public function getById(
-        int $id,
-        array $relations = [],
-        array $appends = []
-    ): ?Model;
+    public function all(array $filters = [], array $relations = []): Collection;
 }

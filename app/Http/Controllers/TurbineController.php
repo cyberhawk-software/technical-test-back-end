@@ -2,95 +2,75 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreTurbineRequest;
-use App\Http\Requests\UpdateTurbineRequest;
+use App\Http\Resources\ComponentResource;
+use App\Http\Resources\InspectionResource;
 use App\Http\Resources\TurbineResource;
+use App\Models\Component;
+use App\Models\Inspection;
 use App\Models\Turbine;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\Http\Response;
-use Illuminate\Routing\Controller;
 
-class TurbineController extends Controller
+class TurbineController extends BaseController
 {
-
     public function __construct(protected \App\Services\Turbine $turbineService)
     {
+        parent::__construct(service: $this->turbineService, resource: TurbineResource::class);
     }
 
     /**
-     * Display a listing of the resource.
+     * Show the turbine resource
      *
+     * @param Turbine $turbine
+     * @return TurbineResource
+     */
+    public function show(Turbine $turbine): TurbineResource
+    {
+        return new TurbineResource($turbine);
+    }
+
+    /**
+     * Get turbine components
+     *
+     * @param Turbine $turbine
      * @return AnonymousResourceCollection
      */
-    public function index(): AnonymousResourceCollection
+    public function getComponents(Turbine $turbine): AnonymousResourceCollection
     {
-        return TurbineResource::collection($this->turbineService->all());
-    }
-
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
+        return ComponentResource::collection($turbine->components);
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Get turbine component
      *
-     * @param  \App\Http\Requests\StoreTurbineRequest  $request
-     * @return Response
+     * @param Turbine $turbine
+     * @param Component $component
+     * @return ComponentResource
      */
-    public function store(StoreTurbineRequest $request)
+    public function getComponent(Turbine $turbine, Component $component): ComponentResource
     {
-        //
+        return $this->turbineService->getComponent(turbineID: $turbine->id, componentID: $component->id);
     }
 
     /**
-     * Display the specified resource.
+     * Get turbine inspections
      *
-     * @param  \App\Models\Turbine  $turbine
-     * @return Response
+     * @param Turbine $turbine
+     * @return AnonymousResourceCollection
      */
-    public function show(Turbine $turbine)
+    public function getInspections(Turbine $turbine): AnonymousResourceCollection
     {
-        //
+        return InspectionResource::collection($turbine->inspections);
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Get turbine component
      *
-     * @param  \App\Models\Turbine  $turbine
-     * @return Response
+     * @param Turbine $turbine
+     * @param Inspection $inspection
+     * @return InspectionResource
      */
-    public function edit(Turbine $turbine)
+    public function getInspection(Turbine $turbine, Inspection $inspection): InspectionResource
     {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateTurbineRequest  $request
-     * @param  \App\Models\Turbine  $turbine
-     * @return Response
-     */
-    public function update(UpdateTurbineRequest $request, Turbine $turbine)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Turbine  $turbine
-     * @return Response
-     */
-    public function destroy(Turbine $turbine)
-    {
-        //
+        return $this->turbineService->getInspection(turbineID: $turbine->id, inspectionID: $inspection->id);
     }
 }

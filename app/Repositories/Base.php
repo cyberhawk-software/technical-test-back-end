@@ -36,17 +36,4 @@ class Base implements BaseRepositoryInterface
 
         return $query->get();
     }
-
-    /**
-     * Find a model by ID
-     *
-     * @param int $id
-     * @param array $relations
-     * @param array $appends
-     * @return Model|null
-     */
-    public function getById(int $id, array $relations = [], array $appends = []): ?Model
-    {
-        return $this->model->with($relations)->findOrFail($id);
-    }
 }

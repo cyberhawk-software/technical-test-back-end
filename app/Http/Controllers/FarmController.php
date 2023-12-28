@@ -2,30 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreFarmRequest;
-use App\Http\Requests\UpdateFarmRequest;
 use App\Http\Resources\FarmResource;
 use App\Http\Resources\TurbineResource;
 use App\Models\Farm;
+use App\Models\Turbine;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\Http\Response;
-use Illuminate\Routing\Controller;
 
-class FarmController extends Controller
+class FarmController extends BaseController
 {
-    public function __construct(protected \App\Services\Farm $farmService)
+    public function __construct(private \App\Services\Farm $farmService)
     {
+        parent::__construct(service: $this->farmService, resource: FarmResource::class);
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return AnonymousResourceCollection
+     * @param Farm $farm
+     * @return FarmResource
      */
-
-    public function index(): AnonymousResourceCollection
+    public function show(Farm $farm): FarmResource
     {
-        return FarmResource::collection($this->farmService->all());
+        return new FarmResource($farm);
     }
 
     /**
@@ -40,68 +36,14 @@ class FarmController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param StoreFarmRequest $request
-     * @return Response
-     */
-    public function store(StoreFarmRequest $request)
-    {
-        // TODO store farm logic here
-    }
-
-    /**
-     * Display the specified resource.
+     * Get farm turbine
      *
      * @param Farm $farm
-     * @return FarmResource
+     * @param Turbine $turbine
+     * @return TurbineResource
      */
-    public function show(Farm $farm): FarmResource
+    public function getTurbine(Farm $farm, Turbine $turbine): TurbineResource
     {
-        return new FarmResource($farm);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param Farm $farm
-     * @return Response
-     */
-    public function edit(Farm $farm)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateFarmRequest  $request
-     * @param Farm $farm
-     * @return Response
-     */
-    public function update(UpdateFarmRequest $request, Farm $farm)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param Farm $farm
-     * @return Response
-     */
-    public function destroy(Farm $farm)
-    {
-        //
+        return $this->farmService->getTurbine(farmID: $farm->id, turbineID: $turbine->id);
     }
 }

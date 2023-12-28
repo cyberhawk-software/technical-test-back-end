@@ -17,7 +17,7 @@ class Turbine extends Model
      */
     public function farm(): BelongsTo
     {
-        return $this->belongsTo(Turbine::class);
+        return $this->belongsTo(Farm::class);
     }
 
     /**
@@ -26,7 +26,7 @@ class Turbine extends Model
      */
     public function components(): HasMany
     {
-        return $this->hasMany(Turbine::class);
+        return $this->hasMany(Component::class);
     }
 
     /**

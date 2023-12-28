@@ -78,3 +78,4 @@ This is a place for you to add your notes, plans, thinking and any feedback you 
 
 - See DEV_DIARY.MD for a detailed account of how I built the api
 - The amount of http requests seems a little excessive and If this were to go to production I'd suggest we could make improvements by making a request for a model bring back all relationships needed and then store these in state management on the front end. So for example, you could make a request to /api/{farm} and bring back all the related turbines/components/inspections etc instead of having to do a request for each individual relation  
+- You've specified {modelID} for every route binding except for the componentTypes and gradeTypes which are just {model}, was this by design or just missed out? I would say they should all follow the same pattern but have not updated in case it was intended
