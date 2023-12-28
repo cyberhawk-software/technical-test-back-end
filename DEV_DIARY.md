@@ -11,3 +11,4 @@
 9. Clicked on farm and saw I needed to create the components end points so created the components infrastructure 
 10. After getting a few pages working with the front end I know enough about how it works to just crack on with the api so created all routes and route model bindings to match api spec
 11. complete all logic for every route and tidy up all controllers/services/repos
+12. Did some end to end testing on the app to see if everything was working. Found a bug in the React code for inspection component and fixed it
