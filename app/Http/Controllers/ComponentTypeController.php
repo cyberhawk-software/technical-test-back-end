@@ -14,4 +14,15 @@ class ComponentTypeController extends BaseController
     {
         parent::__construct(service: $this->componentTypeService, resource: ComponentTypeResource::class);
     }
+
+    /**
+     * Show componentType resource
+     *
+     * @param ComponentType $componentType
+     * @return ComponentTypeResource
+     */
+    public function show(ComponentType $componentType): ComponentTypeResource
+    {
+        return new ComponentTypeResource($componentType);
+    }
 }
