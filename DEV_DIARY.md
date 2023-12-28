@@ -10,3 +10,4 @@
 8. Check /farms endpoint to see if working. It wasn't so debugged and found I needed turbines so created all infrastructure to get turbines
 9. Clicked on farm and saw I needed to create the components end points so created the components infrastructure 
 10. After getting a few pages working with the front end I know enough about how it works to just crack on with the api so created all routes and route model bindings to match api spec
+11. complete all logic for every route and tidy up all controllers/services/repos
