@@ -18,7 +18,7 @@ class GradeTypeFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word
+            'name' => random_int(1, 5)
         ];
     }
 }
