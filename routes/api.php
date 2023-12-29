@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Farms
-Route::prefix('farms')->group(function () {
+Route::name('farms.')->prefix('farms')->group(function () {
     Route::get('/', [FarmController::class, 'index'])->name('all');
     Route::get('/{farmID}', [FarmController::class, 'show'])->name('show');
     Route::get('/{farmID}/turbines', [FarmController::class, 'getTurbines'])->name('turbines.all');
@@ -29,7 +29,7 @@ Route::prefix('farms')->group(function () {
 });
 
 // Turbines
-Route::prefix('turbines')->group(function() {
+Route::name('turbines.')->prefix('turbines')->group(function() {
     Route::get('/', [TurbineController::class, 'index'])->name('all');
     Route::get('/{turbineID}', [TurbineController::class, 'show'])->name('show');
     Route::get('/{turbineID}/components', [TurbineController::class, 'getComponents'])->name('components.all');
@@ -39,7 +39,7 @@ Route::prefix('turbines')->group(function() {
 });
 
 // Components
-Route::prefix('components')->group(function() {
+Route::name('components.')->prefix('components')->group(function() {
     Route::get('/', [ComponentController::class, 'index'])->name('all');
     Route::get('/{componentID}', [ComponentController::class, 'show'])->name('show');
     Route::get('/{componentID}/grades', [ComponentController::class, 'getGrades'])->name('grades.all');
@@ -47,7 +47,7 @@ Route::prefix('components')->group(function() {
 });
 
 // Inspections
-Route::prefix('inspections')->group(function() {
+Route::name('inspections.')->prefix('inspections')->group(function() {
     Route::get('/', [InspectionController::class, 'index'])->name('all');
     Route::get('/{inspectionID}', [InspectionController::class, 'show'])->name('show');
     Route::get('/{inspectionID}/grades', [InspectionController::class, 'getGrades'])->name('grades.all');
@@ -55,19 +55,19 @@ Route::prefix('inspections')->group(function() {
 });
 
 // Grades
-Route::prefix('grades')->group(function() {
+Route::name('grades.')->prefix('grades')->group(function() {
     Route::get('/', [GradeController::class, 'index'])->name('all');
     Route::get('/{gradeID}', [GradeController::class, 'show'])->name('show');
 });
 
 // Component Types
-Route::prefix('component-types')->group(function() {
+Route::name('component.types.')->prefix('component-types')->group(function() {
     Route::get('/', [ComponentTypeController::class, 'index'])->name('all');
     Route::get('/{componentType}', [ComponentTypeController::class, 'show'])->name('show');
 });
 
 // Grade Types
-Route::prefix('grade-types')->group(function() {
+Route::name('grade.types')->prefix('grade-types')->group(function() {
     Route::get('/', [GradeTypeController::class, 'index'])->name('all');
     Route::get('/{gradeType}', [GradeTypeController::class, 'show'])->name('show');
 });
