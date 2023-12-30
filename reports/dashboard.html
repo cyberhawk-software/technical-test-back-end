@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/ComponentController.php.html#11">App\Http\Controllers\ComponentController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentTypeController.php.html#11">App\Http\Controllers\ComponentTypeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/GradeController.php.html#8">App\Http\Controllers\GradeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/GradeTypeController.php.html#8">App\Http\Controllers\GradeTypeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/InspectionController.php.html#11">App\Http\Controllers\InspectionController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#13">App\Http\Controllers\TurbineController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#10">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreComponentRequest.php.html#7">App\Http\Requests\StoreComponentRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreComponentTypeRequest.php.html#7">App\Http\Requests\StoreComponentTypeRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreFarmRequest.php.html#7">App\Http\Requests\StoreFarmRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreGradeRequest.php.html#7">App\Http\Requests\StoreGradeRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreGradeTypeRequest.php.html#7">App\Http\Requests\StoreGradeTypeRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreInspectionRequest.php.html#7">App\Http\Requests\StoreInspectionRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreTurbineRequest.php.html#7">App\Http\Requests\StoreTurbineRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateComponentRequest.php.html#7">App\Http\Requests\UpdateComponentRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateComponentTypeRequest.php.html#7">App\Http\Requests\UpdateComponentTypeRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateFarmRequest.php.html#7">App\Http\Requests\UpdateFarmRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateGradeRequest.php.html#7">App\Http\Requests\UpdateGradeRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateGradeTypeRequest.php.html#7">App\Http\Requests\UpdateGradeTypeRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateInspectionRequest.php.html#7">App\Http\Requests\UpdateInspectionRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateTurbineRequest.php.html#7">App\Http\Requests\UpdateTurbineRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/ComponentResource.php.html#9">App\Http\Resources\ComponentResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/ComponentTypeResource.php.html#7">App\Http\Resources\ComponentTypeResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/GradeResource.php.html#9">App\Http\Resources\GradeResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/GradeTypeResource.php.html#9">App\Http\Resources\GradeTypeResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/InspectionResource.php.html#9">App\Http\Resources\InspectionResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Component.php.html#10">App\Models\Component</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ComponentType.php.html#9">App\Models\ComponentType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Grade.php.html#9">App\Models\Grade</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/GradeType.php.html#9">App\Models\GradeType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Inspection.php.html#10">App\Models\Inspection</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Turbine.php.html#10">App\Models\Turbine</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#9">App\Policies\ComponentPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#9">App\Policies\ComponentTypePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#9">App\Policies\FarmPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#9">App\Policies\GradePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#9">App\Policies\GradeTypePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#9">App\Policies\InspectionPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#9">App\Policies\TurbinePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Component.php.html#7">App\Repositories\Component</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ComponentType.php.html#7">App\Repositories\ComponentType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Grade.php.html#7">App\Repositories\Grade</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/GradeType.php.html#7">App\Repositories\GradeType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Inspection.php.html#7">App\Repositories\Inspection</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Component.php.html#8">App\Services\Component</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ComponentType.php.html#7">App\Services\ComponentType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Grade.php.html#7">App\Services\Grade</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GradeType.php.html#7">App\Services\GradeType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Inspection.php.html#8">App\Services\Inspection</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Turbine.php.html#8">App\Services\Turbine</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Kernel.php.html#8">App\Console\Kernel</a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#10">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Kernel.php.html#16"><abbr title="App\Console\Kernel::schedule">schedule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentController.php.html#13"><abbr title="App\Http\Controllers\ComponentController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentController.php.html#24"><abbr title="App\Http\Controllers\ComponentController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentController.php.html#35"><abbr title="App\Http\Controllers\ComponentController::getGrades">getGrades</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentController.php.html#47"><abbr title="App\Http\Controllers\ComponentController::getGrade">getGrade</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentTypeController.php.html#13"><abbr title="App\Http\Controllers\ComponentTypeController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ComponentTypeController.php.html#24"><abbr title="App\Http\Controllers\ComponentTypeController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/GradeController.php.html#10"><abbr title="App\Http\Controllers\GradeController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/GradeController.php.html#21"><abbr title="App\Http\Controllers\GradeController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/GradeTypeController.php.html#10"><abbr title="App\Http\Controllers\GradeTypeController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/GradeTypeController.php.html#21"><abbr title="App\Http\Controllers\GradeTypeController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/InspectionController.php.html#13"><abbr title="App\Http\Controllers\InspectionController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/InspectionController.php.html#24"><abbr title="App\Http\Controllers\InspectionController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/InspectionController.php.html#35"><abbr title="App\Http\Controllers\InspectionController::getGrades">getGrades</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/InspectionController.php.html#47"><abbr title="App\Http\Controllers\InspectionController::getGrade">getGrade</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#15"><abbr title="App\Http\Controllers\TurbineController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#26"><abbr title="App\Http\Controllers\TurbineController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#37"><abbr title="App\Http\Controllers\TurbineController::getComponents">getComponents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#49"><abbr title="App\Http\Controllers\TurbineController::getComponent">getComponent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#60"><abbr title="App\Http\Controllers\TurbineController::getInspections">getInspections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TurbineController.php.html#72"><abbr title="App\Http\Controllers\TurbineController::getInspection">getInspection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#20"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreComponentRequest.php.html#14"><abbr title="App\Http\Requests\StoreComponentRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreComponentRequest.php.html#24"><abbr title="App\Http\Requests\StoreComponentRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreComponentTypeRequest.php.html#14"><abbr title="App\Http\Requests\StoreComponentTypeRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreComponentTypeRequest.php.html#24"><abbr title="App\Http\Requests\StoreComponentTypeRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreFarmRequest.php.html#14"><abbr title="App\Http\Requests\StoreFarmRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreFarmRequest.php.html#24"><abbr title="App\Http\Requests\StoreFarmRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreGradeRequest.php.html#14"><abbr title="App\Http\Requests\StoreGradeRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreGradeRequest.php.html#24"><abbr title="App\Http\Requests\StoreGradeRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreGradeTypeRequest.php.html#14"><abbr title="App\Http\Requests\StoreGradeTypeRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreGradeTypeRequest.php.html#24"><abbr title="App\Http\Requests\StoreGradeTypeRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreInspectionRequest.php.html#14"><abbr title="App\Http\Requests\StoreInspectionRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreInspectionRequest.php.html#24"><abbr title="App\Http\Requests\StoreInspectionRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreTurbineRequest.php.html#14"><abbr title="App\Http\Requests\StoreTurbineRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreTurbineRequest.php.html#24"><abbr title="App\Http\Requests\StoreTurbineRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateComponentRequest.php.html#14"><abbr title="App\Http\Requests\UpdateComponentRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateComponentRequest.php.html#24"><abbr title="App\Http\Requests\UpdateComponentRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateComponentTypeRequest.php.html#14"><abbr title="App\Http\Requests\UpdateComponentTypeRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateComponentTypeRequest.php.html#24"><abbr title="App\Http\Requests\UpdateComponentTypeRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateFarmRequest.php.html#14"><abbr title="App\Http\Requests\UpdateFarmRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateFarmRequest.php.html#24"><abbr title="App\Http\Requests\UpdateFarmRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateGradeRequest.php.html#14"><abbr title="App\Http\Requests\UpdateGradeRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateGradeRequest.php.html#24"><abbr title="App\Http\Requests\UpdateGradeRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateGradeTypeRequest.php.html#14"><abbr title="App\Http\Requests\UpdateGradeTypeRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateGradeTypeRequest.php.html#24"><abbr title="App\Http\Requests\UpdateGradeTypeRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateInspectionRequest.php.html#14"><abbr title="App\Http\Requests\UpdateInspectionRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateInspectionRequest.php.html#24"><abbr title="App\Http\Requests\UpdateInspectionRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateTurbineRequest.php.html#14"><abbr title="App\Http\Requests\UpdateTurbineRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateTurbineRequest.php.html#24"><abbr title="App\Http\Requests\UpdateTurbineRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/ComponentResource.php.html#17"><abbr title="App\Http\Resources\ComponentResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/ComponentTypeResource.php.html#15"><abbr title="App\Http\Resources\ComponentTypeResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/GradeResource.php.html#17"><abbr title="App\Http\Resources\GradeResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/GradeTypeResource.php.html#17"><abbr title="App\Http\Resources\GradeTypeResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/InspectionResource.php.html#17"><abbr title="App\Http\Resources\InspectionResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Component.php.html#18"><abbr title="App\Models\Component::componentType">componentType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Component.php.html#27"><abbr title="App\Models\Component::turbine">turbine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Component.php.html#36"><abbr title="App\Models\Component::grades">grades</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ComponentType.php.html#17"><abbr title="App\Models\ComponentType::components">components</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Grade.php.html#17"><abbr title="App\Models\Grade::inspection">inspection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Grade.php.html#26"><abbr title="App\Models\Grade::component">component</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Grade.php.html#35"><abbr title="App\Models\Grade::gradeType">gradeType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/GradeType.php.html#17"><abbr title="App\Models\GradeType::grades">grades</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Inspection.php.html#18"><abbr title="App\Models\Inspection::turbine">turbine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Inspection.php.html#27"><abbr title="App\Models\Inspection::grades">grades</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Turbine.php.html#18"><abbr title="App\Models\Turbine::farm">farm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Turbine.php.html#27"><abbr title="App\Models\Turbine::components">components</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Turbine.php.html#36"><abbr title="App\Models\Turbine::inspections">inspections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#19"><abbr title="App\Policies\ComponentPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#31"><abbr title="App\Policies\ComponentPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#42"><abbr title="App\Policies\ComponentPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#54"><abbr title="App\Policies\ComponentPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#66"><abbr title="App\Policies\ComponentPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#78"><abbr title="App\Policies\ComponentPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentPolicy.php.html#90"><abbr title="App\Policies\ComponentPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#19"><abbr title="App\Policies\ComponentTypePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#31"><abbr title="App\Policies\ComponentTypePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#42"><abbr title="App\Policies\ComponentTypePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#54"><abbr title="App\Policies\ComponentTypePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#66"><abbr title="App\Policies\ComponentTypePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#78"><abbr title="App\Policies\ComponentTypePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ComponentTypePolicy.php.html#90"><abbr title="App\Policies\ComponentTypePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#19"><abbr title="App\Policies\FarmPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#31"><abbr title="App\Policies\FarmPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#42"><abbr title="App\Policies\FarmPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#54"><abbr title="App\Policies\FarmPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#66"><abbr title="App\Policies\FarmPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#78"><abbr title="App\Policies\FarmPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/FarmPolicy.php.html#90"><abbr title="App\Policies\FarmPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#19"><abbr title="App\Policies\GradePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#31"><abbr title="App\Policies\GradePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#42"><abbr title="App\Policies\GradePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#54"><abbr title="App\Policies\GradePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#66"><abbr title="App\Policies\GradePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#78"><abbr title="App\Policies\GradePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradePolicy.php.html#90"><abbr title="App\Policies\GradePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#19"><abbr title="App\Policies\GradeTypePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#31"><abbr title="App\Policies\GradeTypePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#42"><abbr title="App\Policies\GradeTypePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#54"><abbr title="App\Policies\GradeTypePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#66"><abbr title="App\Policies\GradeTypePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#78"><abbr title="App\Policies\GradeTypePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/GradeTypePolicy.php.html#90"><abbr title="App\Policies\GradeTypePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#19"><abbr title="App\Policies\InspectionPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#31"><abbr title="App\Policies\InspectionPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#42"><abbr title="App\Policies\InspectionPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#54"><abbr title="App\Policies\InspectionPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#66"><abbr title="App\Policies\InspectionPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#78"><abbr title="App\Policies\InspectionPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/InspectionPolicy.php.html#90"><abbr title="App\Policies\InspectionPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#19"><abbr title="App\Policies\TurbinePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#31"><abbr title="App\Policies\TurbinePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#42"><abbr title="App\Policies\TurbinePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#54"><abbr title="App\Policies\TurbinePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#66"><abbr title="App\Policies\TurbinePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#78"><abbr title="App\Policies\TurbinePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/TurbinePolicy.php.html#90"><abbr title="App\Policies\TurbinePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#15"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Component.php.html#9"><abbr title="App\Repositories\Component::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ComponentType.php.html#10"><abbr title="App\Repositories\ComponentType::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Grade.php.html#9"><abbr title="App\Repositories\Grade::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/GradeType.php.html#9"><abbr title="App\Repositories\GradeType::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Inspection.php.html#9"><abbr title="App\Repositories\Inspection::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Component.php.html#10"><abbr title="App\Services\Component::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Component.php.html#22"><abbr title="App\Services\Component::getGrade">getGrade</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ComponentType.php.html#9"><abbr title="App\Services\ComponentType::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Grade.php.html#9"><abbr title="App\Services\Grade::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GradeType.php.html#9"><abbr title="App\Services\GradeType::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Inspection.php.html#10"><abbr title="App\Services\Inspection::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Inspection.php.html#22"><abbr title="App\Services\Inspection::getGrade">getGrade</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Turbine.php.html#10"><abbr title="App\Services\Turbine::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Turbine.php.html#26"><abbr title="App\Services\Turbine::getComponent">getComponent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Turbine.php.html#43"><abbr title="App\Services\Turbine::getInspection">getInspection</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#20"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.30</a> using <a href="https://secure.php.net/" target="_top">PHP 8.3.1</a> and <a href="https://phpunit.de/">PHPUnit 9.6.15</a> at Sat Dec 30 8:02:00 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([53,0,0,0,0,0,0,1,0,0,0,21], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([135,0,0,0,0,0,0,0,0,0,0,26], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[66.66666666666666,2,"<a href=\"Console\/Kernel.php.html#8\">App\\Console\\Kernel<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#8\">App\\Exceptions\\Handler<\/a>"],[100,2,"<a href=\"Http\/Controllers\/BaseController.php.html#8\">App\\Http\\Controllers\\BaseController<\/a>"],[0,4,"<a href=\"Http\/Controllers\/ComponentController.php.html#11\">App\\Http\\Controllers\\ComponentController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ComponentTypeController.php.html#11\">App\\Http\\Controllers\\ComponentTypeController<\/a>"],[100,4,"<a href=\"Http\/Controllers\/FarmController.php.html#11\">App\\Http\\Controllers\\FarmController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/GradeController.php.html#8\">App\\Http\\Controllers\\GradeController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/GradeTypeController.php.html#8\">App\\Http\\Controllers\\GradeTypeController<\/a>"],[0,4,"<a href=\"Http\/Controllers\/InspectionController.php.html#11\">App\\Http\\Controllers\\InspectionController<\/a>"],[0,6,"<a href=\"Http\/Controllers\/TurbineController.php.html#13\">App\\Http\\Controllers\\TurbineController<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#7\">App\\Http\\Kernel<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#7\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/PreventRequestsDuringMaintenance.php.html#7\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#10\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreComponentRequest.php.html#7\">App\\Http\\Requests\\StoreComponentRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreComponentTypeRequest.php.html#7\">App\\Http\\Requests\\StoreComponentTypeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreFarmRequest.php.html#7\">App\\Http\\Requests\\StoreFarmRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreGradeRequest.php.html#7\">App\\Http\\Requests\\StoreGradeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreGradeTypeRequest.php.html#7\">App\\Http\\Requests\\StoreGradeTypeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreInspectionRequest.php.html#7\">App\\Http\\Requests\\StoreInspectionRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreTurbineRequest.php.html#7\">App\\Http\\Requests\\StoreTurbineRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateComponentRequest.php.html#7\">App\\Http\\Requests\\UpdateComponentRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateComponentTypeRequest.php.html#7\">App\\Http\\Requests\\UpdateComponentTypeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateFarmRequest.php.html#7\">App\\Http\\Requests\\UpdateFarmRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateGradeRequest.php.html#7\">App\\Http\\Requests\\UpdateGradeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateGradeTypeRequest.php.html#7\">App\\Http\\Requests\\UpdateGradeTypeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateInspectionRequest.php.html#7\">App\\Http\\Requests\\UpdateInspectionRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateTurbineRequest.php.html#7\">App\\Http\\Requests\\UpdateTurbineRequest<\/a>"],[0,1,"<a href=\"Http\/Resources\/ComponentResource.php.html#9\">App\\Http\\Resources\\ComponentResource<\/a>"],[0,1,"<a href=\"Http\/Resources\/ComponentTypeResource.php.html#7\">App\\Http\\Resources\\ComponentTypeResource<\/a>"],[100,1,"<a href=\"Http\/Resources\/FarmResource.php.html#9\">App\\Http\\Resources\\FarmResource<\/a>"],[0,1,"<a href=\"Http\/Resources\/GradeResource.php.html#9\">App\\Http\\Resources\\GradeResource<\/a>"],[0,1,"<a href=\"Http\/Resources\/GradeTypeResource.php.html#9\">App\\Http\\Resources\\GradeTypeResource<\/a>"],[0,1,"<a href=\"Http\/Resources\/InspectionResource.php.html#9\">App\\Http\\Resources\\InspectionResource<\/a>"],[100,1,"<a href=\"Http\/Resources\/TurbineResource.php.html#9\">App\\Http\\Resources\\TurbineResource<\/a>"],[0,3,"<a href=\"Models\/Component.php.html#10\">App\\Models\\Component<\/a>"],[0,1,"<a href=\"Models\/ComponentType.php.html#9\">App\\Models\\ComponentType<\/a>"],[100,1,"<a href=\"Models\/Farm.php.html#9\">App\\Models\\Farm<\/a>"],[0,3,"<a href=\"Models\/Grade.php.html#9\">App\\Models\\Grade<\/a>"],[0,1,"<a href=\"Models\/GradeType.php.html#9\">App\\Models\\GradeType<\/a>"],[0,2,"<a href=\"Models\/Inspection.php.html#10\">App\\Models\\Inspection<\/a>"],[0,3,"<a href=\"Models\/Turbine.php.html#10\">App\\Models\\Turbine<\/a>"],[0,7,"<a href=\"Policies\/ComponentPolicy.php.html#9\">App\\Policies\\ComponentPolicy<\/a>"],[0,7,"<a href=\"Policies\/ComponentTypePolicy.php.html#9\">App\\Policies\\ComponentTypePolicy<\/a>"],[0,7,"<a href=\"Policies\/FarmPolicy.php.html#9\">App\\Policies\\FarmPolicy<\/a>"],[0,7,"<a href=\"Policies\/GradePolicy.php.html#9\">App\\Policies\\GradePolicy<\/a>"],[0,7,"<a href=\"Policies\/GradeTypePolicy.php.html#9\">App\\Policies\\GradeTypePolicy<\/a>"],[0,7,"<a href=\"Policies\/InspectionPolicy.php.html#9\">App\\Policies\\InspectionPolicy<\/a>"],[0,7,"<a href=\"Policies\/TurbinePolicy.php.html#9\">App\\Policies\\TurbinePolicy<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#11\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#8\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/EventServiceProvider.php.html#10\">App\\Providers\\EventServiceProvider<\/a>"],[100,3,"<a href=\"Providers\/RouteServiceProvider.php.html#17\">App\\Providers\\RouteServiceProvider<\/a>"],[100,3,"<a href=\"Repositories\/Base.php.html#9\">App\\Repositories\\Base<\/a>"],[0,1,"<a href=\"Repositories\/Component.php.html#7\">App\\Repositories\\Component<\/a>"],[0,1,"<a href=\"Repositories\/ComponentType.php.html#7\">App\\Repositories\\ComponentType<\/a>"],[100,1,"<a href=\"Repositories\/Farm.php.html#7\">App\\Repositories\\Farm<\/a>"],[0,1,"<a href=\"Repositories\/Grade.php.html#7\">App\\Repositories\\Grade<\/a>"],[0,1,"<a href=\"Repositories\/GradeType.php.html#7\">App\\Repositories\\GradeType<\/a>"],[0,1,"<a href=\"Repositories\/Inspection.php.html#7\">App\\Repositories\\Inspection<\/a>"],[100,1,"<a href=\"Repositories\/Turbine.php.html#7\">App\\Repositories\\Turbine<\/a>"],[100,2,"<a href=\"Services\/Base.php.html#8\">App\\Services\\Base<\/a>"],[0,2,"<a href=\"Services\/Component.php.html#8\">App\\Services\\Component<\/a>"],[0,1,"<a href=\"Services\/ComponentType.php.html#7\">App\\Services\\ComponentType<\/a>"],[100,2,"<a href=\"Services\/Farm.php.html#8\">App\\Services\\Farm<\/a>"],[0,1,"<a href=\"Services\/Grade.php.html#7\">App\\Services\\Grade<\/a>"],[0,1,"<a href=\"Services\/GradeType.php.html#7\">App\\Services\\GradeType<\/a>"],[0,2,"<a href=\"Services\/Inspection.php.html#8\">App\\Services\\Inspection<\/a>"],[0,3,"<a href=\"Services\/Turbine.php.html#8\">App\\Services\\Turbine<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Console\/Kernel.php.html#16\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#26\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#35\">App\\Exceptions\\Handler::register<\/a>"],[100,1,"<a href=\"Http\/Controllers\/BaseController.php.html#10\">App\\Http\\Controllers\\BaseController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/BaseController.php.html#20\">App\\Http\\Controllers\\BaseController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ComponentController.php.html#13\">App\\Http\\Controllers\\ComponentController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ComponentController.php.html#24\">App\\Http\\Controllers\\ComponentController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ComponentController.php.html#35\">App\\Http\\Controllers\\ComponentController::getGrades<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ComponentController.php.html#47\">App\\Http\\Controllers\\ComponentController::getGrade<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ComponentTypeController.php.html#13\">App\\Http\\Controllers\\ComponentTypeController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ComponentTypeController.php.html#24\">App\\Http\\Controllers\\ComponentTypeController::show<\/a>"],[100,1,"<a href=\"Http\/Controllers\/FarmController.php.html#13\">App\\Http\\Controllers\\FarmController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/FarmController.php.html#22\">App\\Http\\Controllers\\FarmController::show<\/a>"],[100,1,"<a href=\"Http\/Controllers\/FarmController.php.html#33\">App\\Http\\Controllers\\FarmController::getTurbines<\/a>"],[100,1,"<a href=\"Http\/Controllers\/FarmController.php.html#45\">App\\Http\\Controllers\\FarmController::getTurbine<\/a>"],[0,1,"<a href=\"Http\/Controllers\/GradeController.php.html#10\">App\\Http\\Controllers\\GradeController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/GradeController.php.html#21\">App\\Http\\Controllers\\GradeController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/GradeTypeController.php.html#10\">App\\Http\\Controllers\\GradeTypeController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/GradeTypeController.php.html#21\">App\\Http\\Controllers\\GradeTypeController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/InspectionController.php.html#13\">App\\Http\\Controllers\\InspectionController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/InspectionController.php.html#24\">App\\Http\\Controllers\\InspectionController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/InspectionController.php.html#35\">App\\Http\\Controllers\\InspectionController::getGrades<\/a>"],[0,1,"<a href=\"Http\/Controllers\/InspectionController.php.html#47\">App\\Http\\Controllers\\InspectionController::getGrade<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TurbineController.php.html#15\">App\\Http\\Controllers\\TurbineController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TurbineController.php.html#26\">App\\Http\\Controllers\\TurbineController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TurbineController.php.html#37\">App\\Http\\Controllers\\TurbineController::getComponents<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TurbineController.php.html#49\">App\\Http\\Controllers\\TurbineController::getComponent<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TurbineController.php.html#60\">App\\Http\\Controllers\\TurbineController::getInspections<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TurbineController.php.html#72\">App\\Http\\Controllers\\TurbineController::getInspection<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#15\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#20\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreComponentRequest.php.html#14\">App\\Http\\Requests\\StoreComponentRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreComponentRequest.php.html#24\">App\\Http\\Requests\\StoreComponentRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreComponentTypeRequest.php.html#14\">App\\Http\\Requests\\StoreComponentTypeRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreComponentTypeRequest.php.html#24\">App\\Http\\Requests\\StoreComponentTypeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreFarmRequest.php.html#14\">App\\Http\\Requests\\StoreFarmRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreFarmRequest.php.html#24\">App\\Http\\Requests\\StoreFarmRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreGradeRequest.php.html#14\">App\\Http\\Requests\\StoreGradeRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreGradeRequest.php.html#24\">App\\Http\\Requests\\StoreGradeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreGradeTypeRequest.php.html#14\">App\\Http\\Requests\\StoreGradeTypeRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreGradeTypeRequest.php.html#24\">App\\Http\\Requests\\StoreGradeTypeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreInspectionRequest.php.html#14\">App\\Http\\Requests\\StoreInspectionRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreInspectionRequest.php.html#24\">App\\Http\\Requests\\StoreInspectionRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreTurbineRequest.php.html#14\">App\\Http\\Requests\\StoreTurbineRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreTurbineRequest.php.html#24\">App\\Http\\Requests\\StoreTurbineRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateComponentRequest.php.html#14\">App\\Http\\Requests\\UpdateComponentRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateComponentRequest.php.html#24\">App\\Http\\Requests\\UpdateComponentRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateComponentTypeRequest.php.html#14\">App\\Http\\Requests\\UpdateComponentTypeRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateComponentTypeRequest.php.html#24\">App\\Http\\Requests\\UpdateComponentTypeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateFarmRequest.php.html#14\">App\\Http\\Requests\\UpdateFarmRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateFarmRequest.php.html#24\">App\\Http\\Requests\\UpdateFarmRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateGradeRequest.php.html#14\">App\\Http\\Requests\\UpdateGradeRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateGradeRequest.php.html#24\">App\\Http\\Requests\\UpdateGradeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateGradeTypeRequest.php.html#14\">App\\Http\\Requests\\UpdateGradeTypeRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateGradeTypeRequest.php.html#24\">App\\Http\\Requests\\UpdateGradeTypeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateInspectionRequest.php.html#14\">App\\Http\\Requests\\UpdateInspectionRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateInspectionRequest.php.html#24\">App\\Http\\Requests\\UpdateInspectionRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateTurbineRequest.php.html#14\">App\\Http\\Requests\\UpdateTurbineRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateTurbineRequest.php.html#24\">App\\Http\\Requests\\UpdateTurbineRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Resources\/ComponentResource.php.html#17\">App\\Http\\Resources\\ComponentResource::toArray<\/a>"],[0,1,"<a href=\"Http\/Resources\/ComponentTypeResource.php.html#15\">App\\Http\\Resources\\ComponentTypeResource::toArray<\/a>"],[100,1,"<a href=\"Http\/Resources\/FarmResource.php.html#17\">App\\Http\\Resources\\FarmResource::toArray<\/a>"],[0,1,"<a href=\"Http\/Resources\/GradeResource.php.html#17\">App\\Http\\Resources\\GradeResource::toArray<\/a>"],[0,1,"<a href=\"Http\/Resources\/GradeTypeResource.php.html#17\">App\\Http\\Resources\\GradeTypeResource::toArray<\/a>"],[0,1,"<a href=\"Http\/Resources\/InspectionResource.php.html#17\">App\\Http\\Resources\\InspectionResource::toArray<\/a>"],[100,1,"<a href=\"Http\/Resources\/TurbineResource.php.html#17\">App\\Http\\Resources\\TurbineResource::toArray<\/a>"],[0,1,"<a href=\"Models\/Component.php.html#18\">App\\Models\\Component::componentType<\/a>"],[0,1,"<a href=\"Models\/Component.php.html#27\">App\\Models\\Component::turbine<\/a>"],[0,1,"<a href=\"Models\/Component.php.html#36\">App\\Models\\Component::grades<\/a>"],[0,1,"<a href=\"Models\/ComponentType.php.html#17\">App\\Models\\ComponentType::components<\/a>"],[100,1,"<a href=\"Models\/Farm.php.html#17\">App\\Models\\Farm::turbines<\/a>"],[0,1,"<a href=\"Models\/Grade.php.html#17\">App\\Models\\Grade::inspection<\/a>"],[0,1,"<a href=\"Models\/Grade.php.html#26\">App\\Models\\Grade::component<\/a>"],[0,1,"<a href=\"Models\/Grade.php.html#35\">App\\Models\\Grade::gradeType<\/a>"],[0,1,"<a href=\"Models\/GradeType.php.html#17\">App\\Models\\GradeType::grades<\/a>"],[0,1,"<a href=\"Models\/Inspection.php.html#18\">App\\Models\\Inspection::turbine<\/a>"],[0,1,"<a href=\"Models\/Inspection.php.html#27\">App\\Models\\Inspection::grades<\/a>"],[0,1,"<a href=\"Models\/Turbine.php.html#18\">App\\Models\\Turbine::farm<\/a>"],[0,1,"<a href=\"Models\/Turbine.php.html#27\">App\\Models\\Turbine::components<\/a>"],[0,1,"<a href=\"Models\/Turbine.php.html#36\">App\\Models\\Turbine::inspections<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#19\">App\\Policies\\ComponentPolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#31\">App\\Policies\\ComponentPolicy::view<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#42\">App\\Policies\\ComponentPolicy::create<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#54\">App\\Policies\\ComponentPolicy::update<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#66\">App\\Policies\\ComponentPolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#78\">App\\Policies\\ComponentPolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/ComponentPolicy.php.html#90\">App\\Policies\\ComponentPolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#19\">App\\Policies\\ComponentTypePolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#31\">App\\Policies\\ComponentTypePolicy::view<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#42\">App\\Policies\\ComponentTypePolicy::create<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#54\">App\\Policies\\ComponentTypePolicy::update<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#66\">App\\Policies\\ComponentTypePolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#78\">App\\Policies\\ComponentTypePolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/ComponentTypePolicy.php.html#90\">App\\Policies\\ComponentTypePolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#19\">App\\Policies\\FarmPolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#31\">App\\Policies\\FarmPolicy::view<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#42\">App\\Policies\\FarmPolicy::create<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#54\">App\\Policies\\FarmPolicy::update<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#66\">App\\Policies\\FarmPolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#78\">App\\Policies\\FarmPolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/FarmPolicy.php.html#90\">App\\Policies\\FarmPolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#19\">App\\Policies\\GradePolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#31\">App\\Policies\\GradePolicy::view<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#42\">App\\Policies\\GradePolicy::create<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#54\">App\\Policies\\GradePolicy::update<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#66\">App\\Policies\\GradePolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#78\">App\\Policies\\GradePolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/GradePolicy.php.html#90\">App\\Policies\\GradePolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#19\">App\\Policies\\GradeTypePolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#31\">App\\Policies\\GradeTypePolicy::view<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#42\">App\\Policies\\GradeTypePolicy::create<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#54\">App\\Policies\\GradeTypePolicy::update<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#66\">App\\Policies\\GradeTypePolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#78\">App\\Policies\\GradeTypePolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/GradeTypePolicy.php.html#90\">App\\Policies\\GradeTypePolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#19\">App\\Policies\\InspectionPolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#31\">App\\Policies\\InspectionPolicy::view<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#42\">App\\Policies\\InspectionPolicy::create<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#54\">App\\Policies\\InspectionPolicy::update<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#66\">App\\Policies\\InspectionPolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#78\">App\\Policies\\InspectionPolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/InspectionPolicy.php.html#90\">App\\Policies\\InspectionPolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#19\">App\\Policies\\TurbinePolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#31\">App\\Policies\\TurbinePolicy::view<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#42\">App\\Policies\\TurbinePolicy::create<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#54\">App\\Policies\\TurbinePolicy::update<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#66\">App\\Policies\\TurbinePolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#78\">App\\Policies\\TurbinePolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/TurbinePolicy.php.html#90\">App\\Policies\\TurbinePolicy::forceDelete<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#23\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#32\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#24\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#15\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#28\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#38\">App\\Providers\\EventServiceProvider::shouldDiscoverEvents<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#33\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,2,"<a href=\"Providers\/RouteServiceProvider.php.html#60\">App\\Providers\\RouteServiceProvider::configureRateLimiting<\/a>"],[100,1,"<a href=\"Repositories\/Base.php.html#17\">App\\Repositories\\Base::__construct<\/a>"],[100,2,"<a href=\"Repositories\/Base.php.html#29\">App\\Repositories\\Base::all<\/a>"],[0,1,"<a href=\"Repositories\/Component.php.html#9\">App\\Repositories\\Component::__construct<\/a>"],[0,1,"<a href=\"Repositories\/ComponentType.php.html#10\">App\\Repositories\\ComponentType::__construct<\/a>"],[100,1,"<a href=\"Repositories\/Farm.php.html#9\">App\\Repositories\\Farm::__construct<\/a>"],[0,1,"<a href=\"Repositories\/Grade.php.html#9\">App\\Repositories\\Grade::__construct<\/a>"],[0,1,"<a href=\"Repositories\/GradeType.php.html#9\">App\\Repositories\\GradeType::__construct<\/a>"],[0,1,"<a href=\"Repositories\/Inspection.php.html#9\">App\\Repositories\\Inspection::__construct<\/a>"],[100,1,"<a href=\"Repositories\/Turbine.php.html#10\">App\\Repositories\\Turbine::__construct<\/a>"],[100,1,"<a href=\"Services\/Base.php.html#15\">App\\Services\\Base::__construct<\/a>"],[100,1,"<a href=\"Services\/Base.php.html#20\">App\\Services\\Base::all<\/a>"],[0,1,"<a href=\"Services\/Component.php.html#10\">App\\Services\\Component::__construct<\/a>"],[0,1,"<a href=\"Services\/Component.php.html#22\">App\\Services\\Component::getGrade<\/a>"],[0,1,"<a href=\"Services\/ComponentType.php.html#9\">App\\Services\\ComponentType::__construct<\/a>"],[100,1,"<a href=\"Services\/Farm.php.html#10\">App\\Services\\Farm::__construct<\/a>"],[100,1,"<a href=\"Services\/Farm.php.html#22\">App\\Services\\Farm::getTurbine<\/a>"],[0,1,"<a href=\"Services\/Grade.php.html#9\">App\\Services\\Grade::__construct<\/a>"],[0,1,"<a href=\"Services\/GradeType.php.html#9\">App\\Services\\GradeType::__construct<\/a>"],[0,1,"<a href=\"Services\/Inspection.php.html#10\">App\\Services\\Inspection::__construct<\/a>"],[0,1,"<a href=\"Services\/Inspection.php.html#22\">App\\Services\\Inspection::getGrade<\/a>"],[0,1,"<a href=\"Services\/Turbine.php.html#10\">App\\Services\\Turbine::__construct<\/a>"],[0,1,"<a href=\"Services\/Turbine.php.html#26\">App\\Services\\Turbine::getComponent<\/a>"],[0,1,"<a href=\"Services\/Turbine.php.html#43\">App\\Services\\Turbine::getInspection<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

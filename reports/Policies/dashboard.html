@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Policies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Policies</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ComponentPolicy.php.html#9">App\Policies\ComponentPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#9">App\Policies\ComponentTypePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#9">App\Policies\FarmPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#9">App\Policies\GradePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#9">App\Policies\GradeTypePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#9">App\Policies\InspectionPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#9">App\Policies\TurbinePolicy</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ComponentPolicy.php.html#19"><abbr title="App\Policies\ComponentPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentPolicy.php.html#31"><abbr title="App\Policies\ComponentPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentPolicy.php.html#42"><abbr title="App\Policies\ComponentPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentPolicy.php.html#54"><abbr title="App\Policies\ComponentPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentPolicy.php.html#66"><abbr title="App\Policies\ComponentPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentPolicy.php.html#78"><abbr title="App\Policies\ComponentPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentPolicy.php.html#90"><abbr title="App\Policies\ComponentPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#19"><abbr title="App\Policies\ComponentTypePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#31"><abbr title="App\Policies\ComponentTypePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#42"><abbr title="App\Policies\ComponentTypePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#54"><abbr title="App\Policies\ComponentTypePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#66"><abbr title="App\Policies\ComponentTypePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#78"><abbr title="App\Policies\ComponentTypePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ComponentTypePolicy.php.html#90"><abbr title="App\Policies\ComponentTypePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#19"><abbr title="App\Policies\FarmPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#31"><abbr title="App\Policies\FarmPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#42"><abbr title="App\Policies\FarmPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#54"><abbr title="App\Policies\FarmPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#66"><abbr title="App\Policies\FarmPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#78"><abbr title="App\Policies\FarmPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FarmPolicy.php.html#90"><abbr title="App\Policies\FarmPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#19"><abbr title="App\Policies\GradePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#31"><abbr title="App\Policies\GradePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#42"><abbr title="App\Policies\GradePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#54"><abbr title="App\Policies\GradePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#66"><abbr title="App\Policies\GradePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#78"><abbr title="App\Policies\GradePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradePolicy.php.html#90"><abbr title="App\Policies\GradePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#19"><abbr title="App\Policies\GradeTypePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#31"><abbr title="App\Policies\GradeTypePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#42"><abbr title="App\Policies\GradeTypePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#54"><abbr title="App\Policies\GradeTypePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#66"><abbr title="App\Policies\GradeTypePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#78"><abbr title="App\Policies\GradeTypePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GradeTypePolicy.php.html#90"><abbr title="App\Policies\GradeTypePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#19"><abbr title="App\Policies\InspectionPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#31"><abbr title="App\Policies\InspectionPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#42"><abbr title="App\Policies\InspectionPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#54"><abbr title="App\Policies\InspectionPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#66"><abbr title="App\Policies\InspectionPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#78"><abbr title="App\Policies\InspectionPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InspectionPolicy.php.html#90"><abbr title="App\Policies\InspectionPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#19"><abbr title="App\Policies\TurbinePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#31"><abbr title="App\Policies\TurbinePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#42"><abbr title="App\Policies\TurbinePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#54"><abbr title="App\Policies\TurbinePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#66"><abbr title="App\Policies\TurbinePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#78"><abbr title="App\Policies\TurbinePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TurbinePolicy.php.html#90"><abbr title="App\Policies\TurbinePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.30</a> using <a href="https://secure.php.net/" target="_top">PHP 8.3.1</a> and <a href="https://phpunit.de/">PHPUnit 9.6.15</a> at Sat Dec 30 8:02:00 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([49,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,7,"<a href=\"ComponentPolicy.php.html#9\">App\\Policies\\ComponentPolicy<\/a>"],[0,7,"<a href=\"ComponentTypePolicy.php.html#9\">App\\Policies\\ComponentTypePolicy<\/a>"],[0,7,"<a href=\"FarmPolicy.php.html#9\">App\\Policies\\FarmPolicy<\/a>"],[0,7,"<a href=\"GradePolicy.php.html#9\">App\\Policies\\GradePolicy<\/a>"],[0,7,"<a href=\"GradeTypePolicy.php.html#9\">App\\Policies\\GradeTypePolicy<\/a>"],[0,7,"<a href=\"InspectionPolicy.php.html#9\">App\\Policies\\InspectionPolicy<\/a>"],[0,7,"<a href=\"TurbinePolicy.php.html#9\">App\\Policies\\TurbinePolicy<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"ComponentPolicy.php.html#19\">App\\Policies\\ComponentPolicy::viewAny<\/a>"],[0,1,"<a href=\"ComponentPolicy.php.html#31\">App\\Policies\\ComponentPolicy::view<\/a>"],[0,1,"<a href=\"ComponentPolicy.php.html#42\">App\\Policies\\ComponentPolicy::create<\/a>"],[0,1,"<a href=\"ComponentPolicy.php.html#54\">App\\Policies\\ComponentPolicy::update<\/a>"],[0,1,"<a href=\"ComponentPolicy.php.html#66\">App\\Policies\\ComponentPolicy::delete<\/a>"],[0,1,"<a href=\"ComponentPolicy.php.html#78\">App\\Policies\\ComponentPolicy::restore<\/a>"],[0,1,"<a href=\"ComponentPolicy.php.html#90\">App\\Policies\\ComponentPolicy::forceDelete<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#19\">App\\Policies\\ComponentTypePolicy::viewAny<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#31\">App\\Policies\\ComponentTypePolicy::view<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#42\">App\\Policies\\ComponentTypePolicy::create<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#54\">App\\Policies\\ComponentTypePolicy::update<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#66\">App\\Policies\\ComponentTypePolicy::delete<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#78\">App\\Policies\\ComponentTypePolicy::restore<\/a>"],[0,1,"<a href=\"ComponentTypePolicy.php.html#90\">App\\Policies\\ComponentTypePolicy::forceDelete<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#19\">App\\Policies\\FarmPolicy::viewAny<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#31\">App\\Policies\\FarmPolicy::view<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#42\">App\\Policies\\FarmPolicy::create<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#54\">App\\Policies\\FarmPolicy::update<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#66\">App\\Policies\\FarmPolicy::delete<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#78\">App\\Policies\\FarmPolicy::restore<\/a>"],[0,1,"<a href=\"FarmPolicy.php.html#90\">App\\Policies\\FarmPolicy::forceDelete<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#19\">App\\Policies\\GradePolicy::viewAny<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#31\">App\\Policies\\GradePolicy::view<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#42\">App\\Policies\\GradePolicy::create<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#54\">App\\Policies\\GradePolicy::update<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#66\">App\\Policies\\GradePolicy::delete<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#78\">App\\Policies\\GradePolicy::restore<\/a>"],[0,1,"<a href=\"GradePolicy.php.html#90\">App\\Policies\\GradePolicy::forceDelete<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#19\">App\\Policies\\GradeTypePolicy::viewAny<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#31\">App\\Policies\\GradeTypePolicy::view<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#42\">App\\Policies\\GradeTypePolicy::create<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#54\">App\\Policies\\GradeTypePolicy::update<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#66\">App\\Policies\\GradeTypePolicy::delete<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#78\">App\\Policies\\GradeTypePolicy::restore<\/a>"],[0,1,"<a href=\"GradeTypePolicy.php.html#90\">App\\Policies\\GradeTypePolicy::forceDelete<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#19\">App\\Policies\\InspectionPolicy::viewAny<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#31\">App\\Policies\\InspectionPolicy::view<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#42\">App\\Policies\\InspectionPolicy::create<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#54\">App\\Policies\\InspectionPolicy::update<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#66\">App\\Policies\\InspectionPolicy::delete<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#78\">App\\Policies\\InspectionPolicy::restore<\/a>"],[0,1,"<a href=\"InspectionPolicy.php.html#90\">App\\Policies\\InspectionPolicy::forceDelete<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#19\">App\\Policies\\TurbinePolicy::viewAny<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#31\">App\\Policies\\TurbinePolicy::view<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#42\">App\\Policies\\TurbinePolicy::create<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#54\">App\\Policies\\TurbinePolicy::update<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#66\">App\\Policies\\TurbinePolicy::delete<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#78\">App\\Policies\\TurbinePolicy::restore<\/a>"],[0,1,"<a href=\"TurbinePolicy.php.html#90\">App\\Policies\\TurbinePolicy::forceDelete<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
