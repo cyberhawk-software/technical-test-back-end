@@ -15,3 +15,4 @@
 13. GradeTypes were returning strings so updated the name field in factory to return int between 1-5 to be inline with readme specs
 14. Set up the app for testing and upgraded laravel sail
 15. Wrote tests for farm controller, ran with coverage and committed to git
+16. Checked through PR and cleaned up code
