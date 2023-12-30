@@ -77,7 +77,9 @@ composer install --ignore-platform-reqs
 This is a place for you to add your notes, plans, thinking and any feedback you have for us of the task, please feel free to include whatever you like here, we'll make sure to read it. 
 
 - See DEV_DIARY.MD for a detailed account of how I built the api
-- Run $ sail artisan db:seed to get some dummy data before you start the app!
+- Run $ sail artisan migrate
+- Run $ sail artisan db:seed for some dummy data
+- Run $ sail npm run dev (I fixed a front end bug so need to recompile)
 - The amount of http requests seems a little excessive and If this were to go to production I'd suggest we could make 
 improvements by making a request for a model bring back all relationships needed and then store these in state
 management on the front end. So for example, you could make a request to /api/{farm} and bring back all the related
