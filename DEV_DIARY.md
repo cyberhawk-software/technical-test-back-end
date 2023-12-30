@@ -14,3 +14,4 @@
 12. Did some end to end testing on the app to see if everything was working. Found a bug in the React code for inspection component and fixed it
 13. GradeTypes were returning strings so updated the name field in factory to return int between 1-5 to be inline with readme specs
 14. Set up the app for testing and upgraded laravel sail
+15. Wrote tests for farm controller, ran with coverage and committed to git
