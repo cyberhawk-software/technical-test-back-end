@@ -10,6 +10,8 @@ class FarmPolicy
 {
     use HandlesAuthorization;
 
+    // TODO create all the policy logic for Farm interactions to use for authorization
+
     /**
      * Determine whether the user can view any models.
      *
