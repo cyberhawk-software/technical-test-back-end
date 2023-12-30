@@ -14,8 +14,9 @@ class GradeTypeFactory extends Factory
      * Define the model's default state.
      *
      * @return array<string, mixed>
+     * @throws \Exception
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'name' => random_int(1, 5)

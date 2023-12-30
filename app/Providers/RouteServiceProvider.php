@@ -49,7 +49,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::model('componentID', Component::class);
         Route::model('inspectionID', Inspection::class);
         Route::model('gradeID', Grade::class);
-        Route::model('componentType', ComponentType::class);
     }
 
     /**
