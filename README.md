@@ -74,3 +74,29 @@ composer install --ignore-platform-reqs
 
 ## Your Notes
 This is a place for you to add your notes, plans, thinking and any feedback you have for us of the task, please feel free to include whatever you like here, we'll make sure to read it. 
+
+- See DEV_DIARY.MD for a detailed account of how I built the api
+- Run $ sail artisan migrate
+- Run $ sail artisan db:seed for some dummy data
+- Run $ sail npm run dev (I fixed a front end bug so need to recompile)
+- The amount of http requests seems a little excessive and If this were to go to production I'd suggest we could make 
+improvements by making a request for a model bring back all relationships needed and then store these in state
+management on the front end. So for example, you could make a request to /api/{farm} and bring back all the related
+turbines/components/inspections etc instead of having to do a request for each individual relation  
+- You've specified {modelID} for every route binding except for the componentTypes and gradeTypes which are just {model},
+was this by design or just missed out? I would say they should all follow the same pattern but have not updated in case it was intended
+- There's some stuff in here that's probably a little over-engineered for an app of this size. For example I could have 
+just done all the logic in the controllers and returned the data from there however I wanted to show some more SOLID 
+ways of working and use of design patterns. I've chosen to go with a service and repository pattern in this API. 
+The repository being responsible for any database queries and the service layer for any business logic. 
+An example of this would be if we needed to display a price for something we would most likely store that price in units
+of 1 (pence) and then do some logic to convert that into £ (or another currency if necessary). Using the design patterns
+stated before, the repository would be responsible for querying the DB for the unit value, 60 for example, and then 
+the service layer would be responsible for calculating that data into £ e.g. 60/100 = 6 and would return the answer £6
+to the controller which would serve that up on the API.
+- I've added a test for the farmController and submitted the code coverage for you. I didn't think it was necessary to
+write tests for everything as this should show you enough of how I like to write tests (obviously if this was a production
+  app I'd test everything and try for at least 80% coverage!)
+- I haven't gone as far as setting up authorization however I have added a FarmRequest class and 
+a FarmPolicy class with an example of how I would do authorization
+- I have also not gone as far as setting up Authentication but if I was I would use laravel sanctum SPA authentication - https://laravel.com/docs/10.x/sanctum#spa-authentication

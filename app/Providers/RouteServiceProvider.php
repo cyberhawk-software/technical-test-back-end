@@ -2,6 +2,12 @@
 
 namespace App\Providers;
 
+use App\Models\Component;
+use App\Models\ComponentType;
+use App\Models\Farm;
+use App\Models\Grade;
+use App\Models\Inspection;
+use App\Models\Turbine;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
@@ -36,6 +42,13 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
         });
+
+        // Bind models to match api specs
+        Route::model('farmID', Farm::class);
+        Route::model('turbineID', Turbine::class);
+        Route::model('componentID', Component::class);
+        Route::model('inspectionID', Inspection::class);
+        Route::model('gradeID', Grade::class);
     }
 
     /**

@@ -28,8 +28,8 @@ const Inspection = () => {
     }, [])
 
     useEffect(() => {
-        if(inspection && inspection.id) {
-            turbinesShow(inspection.id);
+        if(inspection && inspection.turbine_id) {
+            turbinesShow(inspection.turbine_id);
         }
     }, [inspection])
 
